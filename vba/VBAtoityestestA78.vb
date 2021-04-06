@@ -1,7 +1,9 @@
 Sub SaveVbaScriptsToGithub()
 '注意事項
 '使用前，先填入API相關資訊，搜尋Token。
+'新增注意事項
 
+'一直新增
 Dim username As String 'Step 01 : 定義變數
 Dim repo_name As String
 Dim file_name As String
@@ -101,7 +103,7 @@ arrData = StrConv(text, vbFromUnicode)
 Set objXML = New MSXML2.DOMDocument60
 Set objNode = objXML.createElement("b64") 'tag name
 
-
+'測試一下
 '定義Node 的資料格式
 objNode.DataType = "bin.base64"
 
@@ -127,3 +129,7 @@ End Function
 '
 'HTML與XML最主要的分別乃為前者主要是用來撰寫網頁用的語言，'且該Html語言(標籤)都是全球統一的，您無法自定標籤，只能變更其標籤屬性。'而後者最主要的功能是用來「資料傳遞」用，例如A網站可將要分享出來的資料(如最新訊息或產品資訊…等)，'轉成XML格式讓B網站可以直接讀取及引用，因此使用者可自行定義標籤(tags)名稱及結構，以利引用者辦識結構及資料內容。
 '=====================
+'testteeeee
+'rrrrrrrrrrrrrrrrrrrrrrrrrrr
+'trrrrrrrrrr
+'新增東西
